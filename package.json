@@ -1,0 +1,27 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "tester",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "express": "4.0.0",
+    "mongoose": "3.6.13",
+    "body-parser": "1.0.1",
+    "mongoose-unique-validator": "0.4.1",
+    "request": "2.47.0",
+    "toobusy": "0.2.4",
+    "bcrypt-nodejs": "0.0.3",
+    "node-uuid": "1.4.1",
+    "passport": "0.2.1",
+    "passport-http": "0.2.2",
+    "ms": "0.6.2",
+    "morgan": "1.4.1",
+    "mocha": "2.0.1"
+  }
+}
