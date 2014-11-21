@@ -21,6 +21,12 @@ REST for users and POIs
 accounts for FB relationships
 and geospatial data
 
+Users are matched with events based on 
+```
+Algorithmical Criteria
+(friends, time , type)
+```
+and are given a queue/agenda from the "bucket"
 
 Setup
 -----
