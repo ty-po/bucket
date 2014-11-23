@@ -48,6 +48,12 @@ start server in dev mode with:
 
 todo:
 -----
+- Matching Algorithm
+- Rework of get methods
+- user model updates
+
+
+******************************
 
 - ~~create models~~
 - ~~facebook integration~~
