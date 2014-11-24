@@ -49,7 +49,7 @@ start server in dev mode with:
 todo:
 -----
 - Matching Algorithm
-- Rework of get methods
+- Rework/Abstraction of CRUD methods
 - user model updates
 
 
