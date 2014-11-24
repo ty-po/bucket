@@ -28,6 +28,8 @@ Algorithmical Criteria
 ```
 and are given a queue/agenda from the "bucket"
 
+events that are kept are added to the bucket list
+
 Setup
 -----
 install node.js and mongoose 
