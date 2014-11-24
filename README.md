@@ -32,9 +32,9 @@ Setup
 -----
 install node.js and mongoose 
 
-git clone this shit
+`git clone` this shit
 
-npm install for all packages
+`npm install` for all packages
 
 $MONGO and $HTTPPORT/$HTTPSPORT hold mongodb server ip and
 output ports respectively. Defaults to 8080 and 443.
@@ -43,7 +43,7 @@ Root permissions are required to open ports below 1024.
 place ssl credentials in ./sslcert/; program expects server.key and server.crt
 
 start server in dev mode with: 
-`sudo nodemon ~/pin-it/server.js --watch pin-it --watch pin-it/app/\*`
+`sudo nodemon ~/bucket/server.js --watch bucket --watch bucket/app/\*`
 
 
 todo:
