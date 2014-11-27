@@ -62,17 +62,12 @@ var router = express.Router();
 
 //middleware for all requests
 router.use(function(req, res, next) {
-/* //logging attempt
-  date = new Date(); 
-  console.log('%s %s %s '+ date.getHours() + ":" + date.getMinutes(), 
-                req.method, req.url, req.path);
-*/
   next();
 });
 
 //global get
-router.get('/', authController.isAuthenticated, function(req,res) {
-  res.json({message: 'welcome to pin-it'});
+router.get('/', function(req,res) {
+  res.json({message: 'welcome to pin-it', nigs: 'nogs'});
 });
 
 // routes for /users --------------------------------------
@@ -99,7 +94,7 @@ router.route('/pins/:pin_id')
   .delete(authController.isAuthenticated, pinController.deletePin);
 
 //routes for /me-------------------------------------------
-router.route('/me')
+router.route('/users/me')
   .get(authController.isAuthenticated, meController.getMe)
   .put(authController.isAuthenticated, meController.putMe);
 

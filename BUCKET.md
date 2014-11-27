@@ -57,8 +57,8 @@ REST spec
 |GET     | ✓       | ×     | /users/:user_id      | public user profile             |
 |GET     | ✓       | ×     | /users/:user_id/list | public bucket list              |
 |PUT     | ✓       | ✓     | /users/me/list       | my bucket list                  |
-|POST    | ✓       | ×     | /events              | create new event                |
-|GET     | ✓       | ×     | /events              | returns queue of matched events |
-|PUT     | ✓       | ✓     | /events/:event_id    | update event                    |
-|DELETE  | ✓       | ✓     | /events/:event_id    | delete event                    |
+|POST    | ✓       | ×     | /pins                | create new event                |
+|GET     | ✓       | ×     | /pins                | returns queue of matched events |
+|PUT     | ✓       | ✓     | /pins/:pin_id        | update event                    |
+|DELETE  | ✓       | ✓     | /pins/:pin_id        | delete event                    |
 
