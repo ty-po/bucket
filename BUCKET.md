@@ -48,7 +48,9 @@ REST spec
 
 | method | secured | owned | URL                  | spec                            |
 |:------:|:-------:|:-----:|:--------------------:|:-------------------------------:|
-|POST    | ×       | ×     | /users/me            | login w/fb, returns api id+auth |
+|GET     | ×       | ×     | /                    | test route                      |
+|GET     | ✓       | ×     | /users               | secured test route              |
+|POST    | ×       | ×     | /users               | login w/fb, returns api id+auth |
 |GET     | ✓       | ✓     | /users/me            | my profile and private info     |
 |PUT     | ✓       | ✓     | /users/me            | update profile                  |
 |DELETE  | ✓       | ✓     | /users/me            | remove profile                  |
