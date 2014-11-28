@@ -67,7 +67,7 @@ router.use(function(req, res, next) {
 
 //global get
 router.get('/', function(req,res) {
-  res.json({message: 'welcome to pin-it', nigs: 'nogs'});
+  res.json({message: 'welcome to buckit'});
 });
 
 // routes for /users --------------------------------------
@@ -94,7 +94,7 @@ router.route('/pins/:pin_id')
   .delete(authController.isAuthenticated, pinController.deletePin);
 
 //routes for /me-------------------------------------------
-router.route('/users/me')
+router.route('/me')
   .get(authController.isAuthenticated, meController.getMe)
   .put(authController.isAuthenticated, meController.putMe);
 

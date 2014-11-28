@@ -51,12 +51,12 @@ REST spec
 |GET     | ×       | ×     | /                    | test route                      |
 |GET     | ✓       | ×     | /users               | secured test route              |
 |POST    | ×       | ×     | /users               | login w/fb, returns api id+auth |
-|GET     | ✓       | ✓     | /users/me            | my profile and private info     |
-|PUT     | ✓       | ✓     | /users/me            | update profile                  |
-|DELETE  | ✓       | ✓     | /users/me            | remove profile                  |
+|GET     | ✓       | ✓     | /me                  | my profile and private info     |
+|PUT     | ✓       | ✓     | /me                  | update profile                  |
+|DELETE  | ✓       | ✓     | /me                  | remove profile                  |
 |GET     | ✓       | ×     | /users/:user_id      | public user profile             |
 |GET     | ✓       | ×     | /users/:user_id/list | public bucket list              |
-|PUT     | ✓       | ✓     | /users/me/list       | my bucket list                  |
+|PUT     | ✓       | ✓     | /me/list             | my bucket list                  |
 |POST    | ✓       | ×     | /pins                | create new event                |
 |GET     | ✓       | ×     | /pins                | returns queue of matched events |
 |PUT     | ✓       | ✓     | /pins/:pin_id        | update event                    |
