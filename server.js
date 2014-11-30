@@ -62,17 +62,12 @@ var router = express.Router();
 
 //middleware for all requests
 router.use(function(req, res, next) {
-/* //logging attempt
-  date = new Date(); 
-  console.log('%s %s %s '+ date.getHours() + ":" + date.getMinutes(), 
-                req.method, req.url, req.path);
-*/
   next();
 });
 
 //global get
-router.get('/', authController.isAuthenticated, function(req,res) {
-  res.json({message: 'welcome to pin-it'});
+router.get('/', function(req,res) {
+  res.json({message: 'welcome to buckit'});
 });
 
 // routes for /users --------------------------------------

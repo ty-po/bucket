@@ -28,6 +28,8 @@ Algorithmical Criteria
 ```
 and are given a queue/agenda from the "bucket"
 
+events that are kept are added to the bucket list
+
 Setup
 -----
 install node.js and mongoose 
@@ -49,8 +51,9 @@ start server in dev mode with:
 todo:
 -----
 - Matching Algorithm
-- Rework of get methods
+- Rework/Abstraction of CRUD methods
 - user model updates
+- bucket list model and controller
 
 
 ******************************

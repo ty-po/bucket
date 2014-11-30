@@ -7,7 +7,7 @@ var fbAuth = require('./fb');
 // Create endpoint /api/users for POSTS
 exports.postUsers = function(req, res) {
   // Create a new instance of the User model
-  var user = new User();
+  //var user = new User();
 
   // Verify Facebook Data
   var data;
@@ -53,13 +53,16 @@ exports.postUsers = function(req, res) {
 
 // Create endpoint /api/users for GET
 exports.getUsers = function(req, res) {
-  // Use the User model to find all user
+  res.json({message: 'you are authenticated', id: req.user._id});
+  // Use the User model to find all user  
+  /**
   User.find(function(err, users) {
     if (err)
       res.send(err);
 
     res.json(users);
   });
+  **/
 };
 
 // Create endpoint /api/users/:user_id for GET

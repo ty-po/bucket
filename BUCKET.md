@@ -42,3 +42,23 @@ The most fundamental part of UX is the notion that a Swiping up is putting an
 event (back) into the bucket (rejection in the case of a user, or sharing in
 the case of an event admin) and Swiping down is taking an event from the bucket
 and putting it into your list.
+
+REST spec
+---------
+
+| method | secured | owned | URL                  | spec                            |
+|:------:|:-------:|:-----:|:--------------------:|:-------------------------------:|
+|GET     | ×       | ×     | /                    | test route                      |
+|GET     | ✓       | ×     | /users               | secured test route              |
+|POST    | ×       | ×     | /users               | login w/fb, returns api id+auth |
+|GET     | ✓       | ✓     | /me                  | my profile and private info     |
+|PUT     | ✓       | ✓     | /me                  | update profile                  |
+|DELETE  | ✓       | ✓     | /me                  | remove profile                  |
+|GET     | ✓       | ×     | /users/:user_id      | public user profile             |
+|GET     | ✓       | ×     | /users/:user_id/list | public bucket list              |
+|PUT     | ✓       | ✓     | /me/list             | my bucket list                  |
+|POST    | ✓       | ×     | /pins                | create new event                |
+|GET     | ✓       | ×     | /pins                | returns queue of matched events |
+|PUT     | ✓       | ✓     | /pins/:pin_id        | update event                    |
+|DELETE  | ✓       | ✓     | /pins/:pin_id        | delete event                    |
+
