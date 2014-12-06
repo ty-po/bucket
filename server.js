@@ -66,7 +66,7 @@ router.use(function(req, res, next) {
 });
 
 //global get
-router.get('/', function(req,res) {
+router.get('/', authController.isAuthenticated, function(req,res) {
   res.json({message: 'welcome to buckit'});
 });
 
@@ -80,6 +80,8 @@ router.route('/users/:user_id')
   .get(userController.getUser) //missing auth
   .put(authController.isAuthenticated, userController.putUser)
   .delete(authController.isAuthenticated, userController.deleteUser);
+
+//routes for public lists
 
 
 // routes for /pins --------------------------------------
@@ -97,6 +99,8 @@ router.route('/pins/:pin_id')
 router.route('/me')
   .get(authController.isAuthenticated, meController.getMe)
   .put(authController.isAuthenticated, meController.putMe);
+
+//routes for personal bucket list
 
 //Register Routes -----------------------------------------
 
