@@ -58,6 +58,8 @@ REST spec
 |GET     | ✓       | ×     | /users/:user_id/list | public bucket list              |
 |GET     | ✓       | ✓     | /me/list             | view my bucket list             |
 |PUT     | ✓       | ✓     | /me/list             | update my bucket list           |
+|GET     | ✓       | ×     | /users/:user_id/pins | see users public events         |
+|GET     | ✓       | ✓     | /me/pins             | view my created events          |
 |POST    | ✓       | ×     | /pins                | create new event                |
 |GET     | ✓       | ×     | /pins                | returns queue of matched events |
 |PUT     | ✓       | ✓     | /pins/:pin_id        | update event                    |
