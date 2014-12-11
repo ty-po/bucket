@@ -54,6 +54,7 @@ todo:
 - Rework/Abstraction of CRUD methods
 - user model updates
 - bucket list model and controller
+- Pin pictures
 
 
 ******************************
