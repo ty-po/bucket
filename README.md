@@ -34,7 +34,7 @@ Setup
 -----
 install node.js and mongoose 
 
-`git clone` this shit
+`git clone` this
 
 `npm install` for all packages
 
