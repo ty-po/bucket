@@ -1,0 +1,61 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+.backgnd {
+  width: 100%;
+  height: 100%;
+  background: url('../img/sunrise.jpg') no-repeat center;
+}
+
+.login {
+  opacity: 0.85;
+}
+
+.login-item {
+  opacity: 1.0;
+}
+
+.center {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25em;
+  height: 100px;
+  -webkit-transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);  
+  border-style: none;
+}
+
+$modal-bg-color:  #444 !default;
+$modal-inset-mode-break-point: 35em;
+$modal-inset-mode-min-height: 150px;
+$modal-inset-mode-top: 40%;
+$modal-inset-mode-bottom: 40%;
+$modal-inset-mode-left: 20%;
+$modal-inset-mode-right: 20%;
+
+
+$item-default-bg: none;
+$item-border-width: 0px;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
